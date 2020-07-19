@@ -51,6 +51,7 @@ class GamingScreen(object):
                 self.pipe_group.remove(pipe)
             if pipe.x < 144 - 52 and pipe.is_score == False:
                 setting.score += 1
+                get_point_sound.play()
                 pipe.is_score = True
 
     def die(self, setting, dead_screen):
@@ -59,6 +60,7 @@ class GamingScreen(object):
                 setting.best_score = setting.score
             write_txt(setting)
             dead_screen.load()
+            collide_sound.play()
             setting.phase = 3
 
     def print_score(self, setting):

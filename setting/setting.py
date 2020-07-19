@@ -1,6 +1,8 @@
 import pygame, random
 from pygame.locals import *
 
+pygame.mixer.init()
+
 FPS = 120
 transparent = 0, 0, 0, 0
 
@@ -61,6 +63,10 @@ dead_screen_score_board_letter = [
     pygame.image.load("image/number_score_08.png"),
     pygame.image.load("image/number_score_09.png"),
 ]
+
+fly_sound = pygame.mixer.Sound("sound/fly.wav")
+collide_sound = pygame.mixer.Sound("sound/collide.mp3")
+get_point_sound = pygame.mixer.Sound("sound/get_point.mp3")
 
 class Setting(object):
     def __init__(self):

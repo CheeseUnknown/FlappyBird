@@ -1,5 +1,6 @@
 import pygame, sys
 from pygame.locals import *
+from setting.setting import *
 
 def get_event(setting, mouse_position, main_screen):
     for event in pygame.event.get():
@@ -14,6 +15,7 @@ def get_event(setting, mouse_position, main_screen):
                     setting.phase = 1
             elif setting.phase == 2:
                 main_screen.gaming_screen.bird_groupSingle.sprite.velocity = -3
+                fly_sound.play()
             elif setting.phase == 3:
                 if mouse_position[0] >= 86 and mouse_position[0] <= 202 and mouse_position[1] >= 330 and mouse_position[1] <= 400 and main_screen.dead_screen.alpha >= 255:
                     setting.score = 0
