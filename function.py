@@ -19,6 +19,7 @@ def get_event(setting, mouse_position, main_screen):
             elif setting.phase == 3:
                 if mouse_position[0] >= 86 and mouse_position[0] <= 202 and mouse_position[1] >= 330 and mouse_position[1] <= 400 and main_screen.dead_screen.alpha >= 255:
                     setting.score = 0
+                    main_screen.dead_screen.alpha = 0
                     main_screen.gaming_screen.load()
                     setting.phase = 1
         if event.type == MOUSEBUTTONDOWN:

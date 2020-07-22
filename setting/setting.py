@@ -65,8 +65,8 @@ dead_screen_score_board_letter = [
 ]
 
 fly_sound = pygame.mixer.Sound("sound/fly.wav")
-collide_sound = pygame.mixer.Sound("sound/collide.mp3")
-get_point_sound = pygame.mixer.Sound("sound/get_point.mp3")
+collide_sound = pygame.mixer.Sound("sound/collide.wav")
+get_point_sound = pygame.mixer.Sound("sound/get_point.wav")
 
 class Setting(object):
     def __init__(self):
