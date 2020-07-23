@@ -1,4 +1,4 @@
-# Flappy-Bird
+# FlappyBird
 Made by python.
 You need pygame which is the latest version. It can significantly improve the frame rate.
 Press the left mouse button to fly.
