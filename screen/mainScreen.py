@@ -30,7 +30,7 @@ class MainScreen(object):
         self.dead_screen = DeadScreen()
         self.x = 0
         self.y = 0
-    
+
     def update(self, ticks, setting):
         self.load_image(self.time)
         self.land_move(setting)

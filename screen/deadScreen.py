@@ -19,7 +19,7 @@ class DeadScreen(object):
         self.medal_image = pygame.Surface((44, 44)).convert_alpha()
         self.medal_image.fill(transparent)
         self.alpha = 0
-    
+
     def update(self):
         self.load_image()
 
@@ -47,7 +47,7 @@ class DeadScreen(object):
             #score
             self.print_score(setting)
             self.print_best_score(setting)
-            
+
     def print_score(self, setting):
         width = 0
         digital = 0

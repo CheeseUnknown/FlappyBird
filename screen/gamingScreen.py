@@ -25,7 +25,7 @@ class GamingScreen(object):
         self.pipe_group.add(pipe)
         self.x = 0
         self.y = 0
-    
+
     def update(self, ticks, setting, dead_screen):
         self.load_image()
         self.pipe_manager(setting)

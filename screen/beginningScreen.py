@@ -20,7 +20,7 @@ class BeginningScreen(object):
         self.bird_groupSingle.add(bird)
         self.x = 0
         self.y = 0
-    
+
     def update(self, ticks):
         self.load_image()
         self.bird_groupSingle.update(ticks)
